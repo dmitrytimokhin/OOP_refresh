@@ -5,5 +5,5 @@ class Car:
     engine = 1.6
 
     @staticmethod
-    def Drive():
+    def Drive() -> str:
         print("Let's go")

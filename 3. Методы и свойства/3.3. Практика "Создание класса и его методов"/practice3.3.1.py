@@ -8,14 +8,31 @@
 
 # Напишите определение класса Dog
 class Dog:
-    def __init__(self, name, age):
+    def __init__(self, name: object, age: int):
+        """
+
+        :type age: int
+        :type name: object
+        :param name:
+        :param age:
+        """
         self.name = name
         self.age = age
 
-    def description(self):
+    def description(self) -> str:
+        """
+
+        :return: 
+        """
         return f'{self.name} is {self.age} years old'
 
-    def speak(self, sound):
+    def speak(self, sound: object) -> str:
+        """
+
+        :type sound: object
+        :param sound: 
+        :return: 
+        """
         return f'{self.name} says {sound}'
 
 

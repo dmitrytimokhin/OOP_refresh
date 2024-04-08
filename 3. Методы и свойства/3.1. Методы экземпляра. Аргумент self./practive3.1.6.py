@@ -10,16 +10,16 @@ class Point:
 
     def set_coordinates(self, x: float, y: float):
         """
-The method saves the coordinate of the points to an instance of the class
+        The method saves the coordinate of the points to an instance of the class
         :param x: coordinate of the X
         :param y: coordinate of the Y
         """
         self.x = x
         self.y = y
 
-    def get_distance(self, point: object):
+    def get_distance(self, point: object) -> object:
         """
-The method calculates distance between two points
+        The method calculates distance between two points
         :param point: instance of the Point class
         :return:
         """

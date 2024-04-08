@@ -21,10 +21,10 @@ class BankAccount:
         self._account_number = account_number
         self._balance = balance
 
-    def get_account_number(self):
+    def get_account_number(self) -> object:
         """ Геттер-метод для атрибута _account_number """
         return self._account_number
 
-    def get_balance(self):
+    def get_balance(self) -> object:
         """ Геттер-метод для атрибута _balance """
         return self._balance

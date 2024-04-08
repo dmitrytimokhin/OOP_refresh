@@ -4,16 +4,25 @@
 
 class Zebra:
     def __init__(self):
+        """
+
+        """
         self.n = 1
         self.string_to_print1 = 'белая'
         self.string_to_print2 = 'черная'
 
-    def which_stripe(self):
+    def which_stripe(self) -> str:
+        """
+
+        """
         if self.n&1==1:
             print(f'Полоска {self.string_to_print1}')
         else:
             print(f'Полоска {self.string_to_print2}')
         self.n+=1
 
-    def run_away(self):
+    def run_away(self) -> str:
+        """
+
+        """
         print('Oh, Sugar Honey Ice Tea')

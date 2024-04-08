@@ -19,18 +19,34 @@
 # Напишите определение класса Stack
 class Stack:
     def __init__(self):
+        """
+
+        """
         self.values = list()
 
-    def push(self, item):
+    def push(self, item: object):
+        """
+
+        :type item: object
+        :param item:
+        """
         self.values.append(item)
 
-    def pop(self):
+    def pop(self) -> object:
+        """
+
+        :return:
+        """
         try:
             return self.values.pop()
         except:
             print('Empty Stack')
 
-    def peek(self):
+    def peek(self) -> object:
+        """
+
+        :return:
+        """
         try:
             return self.values[-1]
         except:
@@ -38,9 +54,17 @@ class Stack:
             return None
 
     def is_empty(self) -> bool:
+        """
+
+        :return:
+        """
         return len(self.values) == 0
 
     def size(self) -> int:
+        """
+
+        :return:
+        """
         return len(self.values)
 
 

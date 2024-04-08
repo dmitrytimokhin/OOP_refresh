@@ -8,7 +8,7 @@
 
 # Напишите определение класса Laptop
 class Laptop:
-    def __init__(self, brand:str=None, model:str=None, price:float=None):
+    def __init__(self, brand: str = None, model: str = None, price: float = None):
         """
 
         :param brand:

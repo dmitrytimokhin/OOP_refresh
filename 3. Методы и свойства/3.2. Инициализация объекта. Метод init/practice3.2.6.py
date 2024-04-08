@@ -8,15 +8,32 @@
 
 # Напишите определение класса Person
 class Person:
-    def __init__(self, first_name:str=None,last_name:str=None,age:int=None):
+    def __init__(self, first_name: str = None, last_name: str = None, age: int = None):
+        """
+
+        :type age: object
+        :type last_name: object
+        :type first_name: object
+        :param first_name:
+        :param last_name:
+        :param age:
+        """
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
-    def full_name(self):
+    def full_name(self) -> str:
+        """
+
+        :return:
+        """
         return (f'{self.last_name} {self.first_name}')
 
-    def is_adult(self):
+    def is_adult(self) -> int:
+        """
+
+        :return:
+        """
         return self.age >= 18
 
 # Ниже код для проверки методов класса Person

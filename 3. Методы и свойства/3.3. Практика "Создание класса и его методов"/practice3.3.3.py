@@ -12,16 +12,37 @@
 
 class Numbers:
     def __init__(self, *args):
+        """
+
+        :param args:
+        """
         self.numbers = list(args)
 
-    def add_number(self, value):
+    def add_number(self, value: object):
+        """
+
+        :type value: object
+        :param value:
+        """
         self.numbers.append(value)
 
-    def get_positive(self):
+    def get_positive(self) -> object:
+        """
+
+        :return:
+        """
         return [i for i in self.numbers if i > 0]
 
-    def get_negative(self):
+    def get_negative(self) -> list:
+        """
+
+        :return:
+        """
         return [i for i in self.numbers if i < 0]
 
-    def get_zeroes(self):
+    def get_zeroes(self) -> list:
+        """
+
+        :return:
+        """
         return [i for i in self.numbers if i == 0]

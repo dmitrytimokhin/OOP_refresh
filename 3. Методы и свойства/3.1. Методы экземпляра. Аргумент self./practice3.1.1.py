@@ -11,7 +11,10 @@
 class Lion:
     voice = ''
 
-    def roar(self):
+    def roar(self) -> object:
+        """
+
+        """
         self.voice = 'Rrrrrrr!!!'
         print(self.voice)
 

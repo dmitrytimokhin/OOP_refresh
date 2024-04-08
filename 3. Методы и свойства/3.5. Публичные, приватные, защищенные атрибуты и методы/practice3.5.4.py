@@ -8,7 +8,7 @@
 
 class BankDeposit:
 
-    def __init__(self, name: object, balance: float, rate: float) -> None:
+    def __init__(self, name: object, balance: float, rate: float):
         """
 
         :type rate: float

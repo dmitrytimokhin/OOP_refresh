@@ -2,7 +2,7 @@
 
 class BankAccount:
 
-    def __init__(self, name: object, balance: float, passport: object) -> object:
+    def __init__(self, name: object, balance: float, passport: object):
         """
 
         :type passport: object

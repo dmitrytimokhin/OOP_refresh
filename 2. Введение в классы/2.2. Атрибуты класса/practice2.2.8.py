@@ -4,5 +4,13 @@
 #
 # Ваша задача написать только определение функции is_obj_has_attr
 
-def is_obj_has_attr(attr: object,name: str) -> bool:
+def is_obj_has_attr(attr: object,name: str):
+    """
+
+    :type name: object
+    :type attr: object
+    :param attr: 
+    :param name: 
+    :return: 
+    """
     return hasattr(attr, name)

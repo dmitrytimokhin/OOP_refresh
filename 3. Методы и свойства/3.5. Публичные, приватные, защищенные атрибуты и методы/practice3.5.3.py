@@ -9,7 +9,7 @@
     # метод access_private_method, который вызывает приватный метод __display_details.
 
 class Student:
-    def __init__(self, name: object, age: int, branch: object) -> None:
+    def __init__(self, name: object, age: int, branch: object):
         """
 
         :type branch: object

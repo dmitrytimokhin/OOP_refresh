@@ -16,14 +16,30 @@ class WeatherStation:
               }
 
     def __init__(self):
+        """
+
+        """
         self.__dict__ = self.__attr
 
     def update_data(self, temperature: float, humidity: float, pressure: float):
+        """
+
+        :type pressure: object
+        :type humidity: object
+        :type temperature: object
+        :param temperature:
+        :param humidity:
+        :param pressure:
+        """
         self.temperature = temperature
         self.humidity = humidity
         self.pressure = pressure
 
-    def get_current_data(self):
+    def get_current_data(self) -> object:
+        """
+
+        :return:
+        """
         return (self.temperature, self.humidity, self.pressure)
 
 

@@ -6,10 +6,19 @@
 # В последней строчке кода используйте эти знания, чтобы вызвать приватный метод вне класса.
 
 class AverageCalculator:
-    def __init__(self, numbers):
+    def __init__(self, numbers: list):
+        """
+
+        :type numbers: list
+        :param numbers:
+        """
         self.numbers = numbers
 
-    def __calculate_average(self):
+    def __calculate_average(self) -> float:
+        """
+
+        :return:
+        """
         total = sum(self.numbers)
         return total / len(self.numbers)
 

@@ -11,7 +11,13 @@ import numpy as np
 class Config:
     pass
 
-def create_instance(n: int) -> Config:
+def create_instance(n: int) -> object:
+    """
+
+    :type n: object
+    :param n:
+    :return:
+    """
     obj = Config()
     obj.__dict__ = {f'attribute{n}':f'value{n}' for n in np.arange(1,n+1)}
     return obj

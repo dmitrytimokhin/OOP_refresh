@@ -7,7 +7,7 @@ class Cat:
         'color':'black'
     }
 
-    def __init__(self) -> object:
+    def __init__(self):
         """
 
         """

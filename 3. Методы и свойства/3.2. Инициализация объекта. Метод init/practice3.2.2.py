@@ -7,11 +7,20 @@
 # Вот что нашкодил Василий, посмотрите реализацию кода ниже. Он не проходит проверки, которые написаны ниже определения класса Person. Ваша задача найти ошибки в коде и их исправить
 
 class Person:
-    def __init__(self, name, age):
+    def __init__(self, name: object, age: int):
+        """
+
+        :param name:
+        :param age:
+        """
         self.name = name
         self.age = age
 
-    def greet(self):
+    def greet(self) -> str:
+        """
+
+        :return:
+        """
         return f"Hello, my name is {self.name}, and I am {self.age} years old"
 
 

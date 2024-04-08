@@ -15,11 +15,21 @@
 
 # Напишите определение класса CustomLabel
 class CustomLabel:
-    def __init__(self, text, **kwargs):
+    def __init__(self, text: object, **kwargs: object):
+        """
+
+        :type text: object
+        :param text:
+        :param kwargs:
+        """
         self.text = text
         self.config(**kwargs)
 
-    def config(self, **kwargs):
+    def config(self, **kwargs: object):
+        """
+
+        :param kwargs:
+        """
         self.__dict__.update(**kwargs)
 
 # Ниже код для проверки методов класса CustomLabel

@@ -31,12 +31,24 @@
 
 # Напишите определение классов Task, TaskList и TaskManager
 class Task:
-    def __init__(self, name: str, description: str, status: bool = False) -> None:
+    def __init__(self, name: str, description: str, status: bool = False):
+        """
+
+        :type status: bool
+        :type description: str
+        :type name: str
+        :param name:
+        :param description:
+        :param status:
+        """
         self.name = name
         self.description = description
         self.status = status
 
     def display(self) -> str:
+        """
+
+        """
         done = 'Сделана' if self.status else 'Не сделана'
         print(f'{self.name} ({done})')
 

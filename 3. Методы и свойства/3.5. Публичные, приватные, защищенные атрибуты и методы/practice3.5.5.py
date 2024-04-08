@@ -12,7 +12,7 @@
 
 class Library:
 
-    def __init__(self, books: list) -> None:
+    def __init__(self, books: list):
         """
 
         :type books: list
@@ -42,7 +42,7 @@ class Library:
         """
         return self.__check_availability(name)
 
-    def return_book(self, name: str) -> None:
+    def return_book(self, name: str):
         """
 
         :type name: str

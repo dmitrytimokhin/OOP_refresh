@@ -11,17 +11,38 @@
 # Треугольник называется равнобедренным, если у него две стороны равны
 
 class Triangle:
-    def __init__(self, a: float, b: float, c: float) -> None:
+    def __init__(self, a: float, b: float, c: float):
+        """
+
+        :type c: object
+        :type b: object
+        :type a: object
+        :param a:
+        :param b:
+        :param c:
+        """
         self.a = a
         self.b = b
         self.c = c
 
     def is_exists(self) -> bool:
+        """
+
+        :return:
+        """
         self.exists = True if self.a < self.b + self.c and self.b < self.a + self.c and self.c < self.a + self.b else False
         return self.exists
 
     def is_equilateral(self) -> bool:
+        """
+
+        :return:
+        """
         return True if (self.a == self.b == self.c) and self.exists else False
 
     def is_isosceles(self) -> bool:
+        """
+
+        :return:
+        """
         return True if (self.a == self.b or self.a == self.c or self.b == self.c) and self.exists else False

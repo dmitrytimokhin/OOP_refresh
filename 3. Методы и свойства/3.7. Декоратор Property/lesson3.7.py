@@ -1,20 +1,38 @@
 class BankAccount:
 
-    def __init__(self,name,balance):
+    def __init__(self, name: object, balance: object):
+        """
+
+        :type balance: object
+        :type name: object
+        :param name:
+        :param balance:
+        """
         self.name=name
         self.__balance=balance
 
-    def get_balance(self):
+    def get_balance(self) -> object:
+        """
+
+        :return:
+        """
         print('get balance')
         return self.__balance
 
-    def set_balance(self,value):
+    def set_balance(self, value: object):
+        """
+
+        :param value:
+        """
         print('set balance')
         if not isinstance(value,(int,float)):
             raise ValueError('Баланс должен быть числом')
         self.__balance=value
 
     def delete_balance(self):
+        """
+
+        """
         print('delete balance')
         del self.__balance
 

@@ -8,10 +8,20 @@
 # Напишите определение класса Constructor
 class Constructor:
 
-    def add_atribute(self, name:str, value):
+    def add_atribute(self, name: str, value: object):
+        """
+
+        :type value: object
+        :type name: object
+        :param name: 
+        :param value: 
+        """
         setattr(self, name, value)
 
-    def display(self):
+    def display(self) -> str:
+        """
+
+        """
         print(self.__dict__)
 
 # Ниже код для проверки класса Constructor

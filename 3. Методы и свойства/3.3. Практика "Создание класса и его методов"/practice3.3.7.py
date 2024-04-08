@@ -25,11 +25,21 @@
 
 # Напишите определение классов Person, Company и Employee
 class Person:
-    def __init__(self, name: str, age: int) -> None:
+    def __init__(self, name: str, age: int):
+        """
+
+        :type age: object
+        :type name: object
+        :param name:
+        :param age:
+        """
         self.name = name
         self.age = age
 
-    def display_person_info(self) -> None:
+    def display_person_info(self) -> dict:
+        """
+
+        """
         print(f'Person: {self.name}, {self.age}')
 
 

@@ -11,15 +11,26 @@
 class Robot:
 
     def set_name(self, name: str):
+        """
+
+        :type name: object
+        :param name:
+        """
         self.name = name
 
-    def say_hello(self):
+    def say_hello(self) -> str:
+        """
+
+        """
         if hasattr(self, 'name'):
             print(f'Hello, human! My name is {self.name}')
         else:
             print('У робота нет имени')
 
-    def say_bye(self):
+    def say_bye(self) -> str:
+        """
+
+        """
         print('See u later alligator')
 
 

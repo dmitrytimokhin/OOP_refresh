@@ -5,7 +5,7 @@ class Point:
 
     list_points = []
 
-    def __init__(self, coord_x: float = 0, coord_y: float = 0) -> object:
+    def __init__(self, coord_x: float = 0, coord_y: float = 0):
         """
 
         :type coord_y: float
@@ -16,11 +16,11 @@ class Point:
         self.move_to(coord_x,coord_y)
         Point.list_points.append(self)
 
-    def move_to(self, new_x: float, new_y: float) -> object:
+    def move_to(self, new_x: float, new_y: float):
         """
 
-        :type new_y: object
-        :type new_x: object
+        :type new_y: float
+        :type new_x: float
         :param new_x:
         :param new_y:
         """
@@ -42,6 +42,7 @@ class Point:
     def calc_distance(self, another_point: object) -> float:
         """
 
+        :type another_point: object
         :param another_point:
         """
         if isinstance(another_point, Point):

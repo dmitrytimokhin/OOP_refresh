@@ -26,13 +26,27 @@ persons = [
 
 
 class Worker:
-    def __init__(self, name, salary, gender, passport):
+    def __init__(self, name: object, salary: float, gender: object, passport: object):
+        """
+
+        :type passport: object
+        :type gender: object
+        :type salary: float
+        :type name: object
+        :param name:
+        :param salary:
+        :param gender:
+        :param passport:
+        """
         self.name = name
         self.salary = salary
         self.gender = gender
         self.passport = passport
 
-    def get_info(self):
+    def get_info(self) -> str:
+        """
+
+        """
         print(f'Worker {self.name}; passport-{self.passport}')
 
 

@@ -11,10 +11,16 @@
 
 class Robot:
 
-    def say_hello(self):
+    def say_hello(self) -> str:
+        """
+
+        """
         print('Hello, human! My name is C-3PO')
 
-    def say_bye(self):
+    def say_bye(self) -> str:
+        """
+
+        """
         print('See u later alligator')
 
 

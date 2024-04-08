@@ -14,15 +14,28 @@
 class Counter:
 
     def start_from(self, start_from: int = 0):
+        """
+
+        :param start_from:
+        """
         self.value = start_from
 
     def increment(self):
+        """
+
+        """
         self.value = self.value + 1
 
-    def display(self):
+    def display(self) -> object:
+        """
+
+        """
         print(f'Текущее значение счетчика = {self.value}')
 
     def reset(self):
+        """
+
+        """
         self.start_from()
 
 

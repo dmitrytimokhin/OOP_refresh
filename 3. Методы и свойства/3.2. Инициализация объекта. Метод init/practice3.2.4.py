@@ -12,23 +12,46 @@
 # Напишите определение класса SoccerPlayer
 class SoccerPlayer:
     def __init__(self,
-                 name:object=None,
-                 surname:object=None,
-                 goals:int=0,
-                 assists:int=0):
+                 name: object = None,
+                 surname: object = None,
+                 goals: int = 0,
+                 assists: int = 0):
+        """
 
+        :type assists: object
+        :type goals: object
+        :type surname: object
+        :type name: object
+        :param name:
+        :param surname:
+        :param goals:
+        :param assists:
+        """
         self.name = name
         self.surname = surname
         self.goals = goals
         self.assists = assists
 
-    def score(self,goals:int=1):
+    def score(self, goals: int = 1):
+        """
+
+        :type goals: object
+        :param goals:
+        """
         self.goals = self.goals + goals
 
-    def make_assist(self,assists:int=1):
+    def make_assist(self, assists: int = 1):
+        """
+
+        :type assists: object
+        :param assists:
+        """
         self.assists = self.assists + assists
 
-    def statistics(self):
+    def statistics(self) -> str:
+        """
+
+        """
         print(f'{self.surname} {self.name} - голы: {self.goals}, передачи: {self.assists}')
 
 # Ниже код для проверки методов класса SoccerPlayer

@@ -8,14 +8,29 @@
 
 # Напишите определение класса Rectangle
 class Rectangle:
-    def __init__(self, width, height):
+    def __init__(self, width: float, height: float):
+        """
+
+        :type height: float
+        :type width: float
+        :param width:
+        :param height:
+        """
         self.width = width
         self.height = height
 
-    def area(self):
+    def area(self) -> float:
+        """
+
+        :return:
+        """
         return self.width * self.height
 
-    def perimeter(self):
+    def perimeter(self) -> float:
+        """
+
+        :return:
+        """
         return (self.width + self.height) * 2
 
 
